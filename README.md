@@ -44,10 +44,6 @@ Other Tools: Any additional libraries or tools used
   <br/>
   ![Download Books](https://i.ibb.co/wgg8w86/Screenshot-71.png)
   <br/>
-  - Admin Login Page
-  <br/>
-  ![Admin Login Page](https://i.ibb.co/5FnxrJc/Screenshot-76.png)
-  <br/>
 - Admin Panel
   <br/>
   ![Admin Panel](https://i.ibb.co/YLFqQzb/Screenshot-78.png)
