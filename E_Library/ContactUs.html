@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="c3iggS3kYizbdRePkYU41gyWizW4M1XMLFINcdbn">
+    <!-- Title -->
+    <title>Contact Us</title>
+    <meta name="description">
+    <meta name="keywords" />
+    <meta property="og:title" content=" " />
+    <meta property="og:description"
+        content="Explore the Ebook library online and gain knowledge through academically sound books. Our free ebooks store online has a wide spectrum of ebooks covering various domains." />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <link rel="canonical" href="" />
+    <link rel="stylesheet" href="../frontend_2/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../frontend_2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../frontend_2/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../frontend_2/css/bootstrap-select.css">
+    <link rel="stylesheet" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1557239464/easyzoom.css" />
+    <link rel="stylesheet"
+        href="https://www.ebookselibrary.com/admin/bower_components/font-awesome/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="../frontend_2/css/jquery.atAccordionOrTabs.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/sweetalert2/4.2.4/sweetalert2.min.css" rel="stylesheet"/>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://www.ebookselibrary.com/admin/transliteration.I.js">
+    </script>
+    <!--<script id="bolt" src="https://sboxcheckout-static.citruspay.com/bolt/run/bolt.min.js" bolt-color="e34524" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png"></script>-->
+    <script id="bolt" src="https://checkout-static.citruspay.com/bolt/run/bolt.min.js" bolt-color="e34524"
+        bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png"></script>
+    <style>
+        a {
+            color: unset;
+        }
+
+        div#countryList {
+            max-height: 320px;
+            overflow-y: auto;
+            font-size: 14px;
+        }
+
+        #myModal .modal-header .close {
+            color: #000;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../frontend_2/css/chang-theme-server.css">
+    <link rel="stylesheet" type="text/css" href="../frontend_2/css/change-theme.css">
+    <link rel="stylesheet" type="text/css" href="../frontend_2/css/chang-theme.css">
+    <link rel="stylesheet" type="text/css" href="../frontend_2/css/add_book.css">
+    <link rel="stylesheet" type="text/css" href="../frontend_2/css/chang-theme-1.css">
+    <link rel="stylesheet" type="text/css" href="../frontend_2/css/all-style.css">
+    <!--<link rel="stylesheet" type="text/css" href="chang-theme-server.css">-->
+    <!--       <link rel="stylesheet" type="text/css" href="chang-theme.css">-->
+    <!--       <link rel="stylesheet" type="text/css" href="add_book.css">-->
+    <!--       <link rel="stylesheet" type="text/css" href="chang-theme-1.css">-->
+    <link href="../frontend_2/css/responsive.css" rel="stylesheet">
+    <style>
+    </style>
+    
+    </style>
+    <style>
+        .swal2-title {
+            font-family: 'Roboto', sans-serif !important;
+        }
+    </style>
+
+  
+    
+    <style type="text/css">
+        @font-face {
+            /* Font Name to use*/
+            font-family: 'HindiFont';
+            /* Font path*/
+            src: url('/../../fonts/Kruti-De--010-Regular.ttf');
+        }
+
+        .hindiFont {
+            /* Assign the font*/
+            font-family: 'HindiFont';
+        }
+    </style>
+    <style>
+        img.institute_buy {
+            width: 100px;
+            margin-left: 5px;
+        }
+    </style>
+    <style>
+        .heartbeat {
+            -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+
+        /**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+        @-webkit-keyframes heartbeat {
+            from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+        }
+
+        @keyframes heartbeat {
+            from {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: center center;
+                transform-origin: center center;
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            10% {
+                -webkit-transform: scale(0.91);
+                transform: scale(0.91);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            17% {
+                -webkit-transform: scale(0.98);
+                transform: scale(0.98);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            33% {
+                -webkit-transform: scale(0.87);
+                transform: scale(0.87);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            45% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+    <style>
+        div#countryList {
+            position: absolute;
+            top: 100%;
+            width: 93%;
+        }
+
+        ul.list-unstyled {
+            margin: 0;
+        }
+
+        li.storeClass {
+            padding: 3px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .storeClass img {
+            margin-right: 10px;
+        }
+    </style>
+    <!--          <script src="https://hinkhoj.com/common/js/keyboard.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="https://hinkhoj.com/common/css/keyboard.css" />-->
+    <style>
+        .login-title {
+            text-align: center;
+        }
+
+        #login-page {
+            display: flex;
+        }
+
+        .notice {
+            font-size: 13px;
+            text-align: center;
+            color: #666;
+        }
+
+        .login {
+            width: 100%;
+            background: #FFF;
+            padding: 16px;
+        }
+
+        .login a {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .form-login {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+        }
+
+        .form-login label {
+            text-align: left;
+            font-size: 13px;
+            margin-top: 10px;
+            margin-left: 20px;
+            display: block;
+            color: #666;
+        }
+
+        .input-email,
+        .input-password,
+        .extra-field {
+            width: 100%;
+            background: #ededed;
+            border-radius: 6px;
+            margin: 4px 0 10px 0;
+            padding: 4px;
+            display: flex;
+        }
+
+        .icon {
+            padding: 14px;
+            color: #666;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .form-login input,
+        textarea {
+            width: 100%;
+            border: 0;
+            background: none;
+            font-size: 16px;
+            padding: 4px 0;
+            outline: none;
+        }
+
+        .form-login button[type="submit"],
+        .btnMobile {
+            width: 100%;
+            border: 0;
+            border-radius: 6px;
+            padding: 8px;
+            background: #00d789;
+            color: #FFF;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 0px;
+            transition: ease all 0.3s;
+        }
+
+        .form-login button[type="submit"]:hover {
+            opacity: 0.9;
+        }
+
+        .background {
+            width: 70%;
+            padding: 40px;
+            height: 100vh;
+            background: linear-gradient(60deg, rgba(158, 189, 19, 0.5), rgba(0, 133, 82, 0.7)), url('https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg') center no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: flex-end;
+            align-content: center;
+            flex-direction: row;
+        }
+
+        .background h1 {
+            max-width: 420px;
+            color: #FFF;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+        }
+
+        .background p {
+            max-width: 650px;
+            color: #1a1a1a;
+            font-size: 15px;
+            text-align: right;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        .created {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .created p {
+            font-size: 13px;
+            font-weight: bold;
+            color: #008552;
+        }
+
+        .created a {
+            color: #666;
+            font-weight: normal;
+            text-decoration: none;
+            margin-top: 0;
+        }
+
+        .checkbox label {
+            display: inline;
+            margin: 0;
+        }
+
+        #myModal .modal-header {
+            background-color: #fff;
+            margin-bottom: -23px;
+        }
+
+        #myModal .modal-title {
+            color: #666;
+            font-family: 'Roboto';
+            text-align: center;
+            padding-top: 19px;
+        }
+
+        .img-responsive {
+            position: absolute;
+            padding-left: 181px;
+            margin-top: -34px;
+        }
+
+        #myModal .modal-footer {
+            border-top: 0px;
+            justify-content: center;
+            margin-top: -35px;
+        }
+
+        #myModal p {
+            color: #666;
+        }
+
+        #myModal .modal-footer>* {
+            margin: 1px;
+        }
+
+        #SuccessModal .modal-footer {
+            border-top: 0px;
+            justify-content: center;
+            margin-top: -35px;
+        }
+
+        #SuccessModal p {
+            color: #666;
+        }
+
+        .custom-model-main {
+            text-align: center;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            /* z-index: 1050; */
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+            opacity: 0;
+            -webkit-transition: opacity 0.15s linear, z-index 0.15;
+            -o-transition: opacity 0.15s linear, z-index 0.15;
+            transition: opacity 0.15s linear, z-index 0.15;
+            z-index: -1;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .model-open {
+            z-index: 99999;
+            opacity: 1;
+            overflow: hidden;
+            height: 80px;
+        }
+
+        .custom-model-inner {
+            -webkit-transform: translate(0, -25%);
+            -ms-transform: translate(0, -25%);
+            transform: translate(0, -25%);
+            -webkit-transition: -webkit-transform 0.3s ease-out;
+            -o-transition: -o-transform 0.3s ease-out;
+            transition: -webkit-transform 0.3s ease-out;
+            -o-transition: transform 0.3s ease-out;
+            transition: transform 0.3s ease-out;
+            transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+            display: inline-block;
+            vertical-align: middle;
+            width: 600px;
+            margin: 0px auto;
+            max-width: 97%;
+        }
+
+        .custom-model-wrap {
+            display: block;
+            width: 100%;
+            position: relative;
+            /*background-color: #fff;*/
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(243, 253, 72, 1) 35%, rgba(187, 247, 167, 1) 100%);
+            border: 1px solid #999;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+            background-clip: padding-box;
+            outline: 0;
+            text-align: left;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            max-height: calc(100vh - 70px);
+            overflow-y: auto;
+        }
+
+        .model-open .custom-model-inner {
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+            position: relative;
+            z-index: 999;
+        }
+
+        /*.model-open .bg-overlay {*/
+        /*  background: rgba(0, 0, 0, 0.6);*/
+        /*  z-index: 99;*/
+        /*}*/
+        /*.bg-overlay {*/
+        /*  background: rgba(0, 0, 0, 0);*/
+        /*  height: 100vh;*/
+        /*  width: 100%;*/
+        /*  position: fixed;*/
+        /*  left: 0;*/
+        /*  top: 0;*/
+        /*  right: 0;*/
+        /*  bottom: 0;*/
+        /*  z-index: 0;*/
+        /*  -webkit-transition: background 0.15s linear;*/
+        /*  -o-transition: background 0.15s linear;*/
+        /*  transition: background 0.15s linear;*/
+        /*}*/
+        .close-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            z-index: 99;
+            font-size: 30px;
+            color: #000;
+        }
+
+        @media screen and (min-width: 800px) {
+            .custom-model-main:before {
+                content: "";
+                display: inline-block;
+                height: auto;
+                vertical-align: middle;
+                margin-right: -0px;
+                height: 100%;
+            }
+        }
+
+        .top_nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 0%;
+
+        }
+
+        .nav_content {
+            margin-right: 20px;
+        }
+
+        nav {
+            background-color: white;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0f8967 !important;
+            font-weight: bold;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #Nav-bar {
+            color: #0f8967 !important;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="fixed-social">
+        <div>
+            <a href="#" class="fixed-facebook"><i class="fa fa-whatsapp"></i> <span>Whatsapp: 9922336776</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-twitter"><i class="fa fa-envelope"></i> <span>Email Us:
+                    dewanshi2019@gmail.com</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-gplus"><i class="fa fa-phone"></i> <span>Call Us: 9922336776</span></a>
+        </div>
+    </div>
+    <div class="fixed-top">
+        <div class="top-strip">
+
+            <div class="top_nav">
+                <div class="nav_content">
+                    <a href="/E_Library/Login.html" class="text-light"><i class="fa fa-user"
+                            aria-hidden="true"></i>&nbsp;<span>Login</span></a>
+                </div>
+                <div class="nav_content">
+                    <a href="/E_Library/Register.html" class="text-light"><i class="fa fa-key"
+                            aria-hidden="true"></i>&nbsp;<span class="text-white">Register</span></a>
+                </div>
+                <div class="nav_content">
+                    <span id="current-date" class="text-light"></span>
+                </div>
+            </div>
+        </div>
+
+
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="Nav-bar">
+            <div class="p-0 m-0">
+                <a class="navbar-brand" href="#"><img src="/Images/ICTRD_logo.png" height="60"
+                        data-aos="fade-up-right"></a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" target="_blank">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_blank">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html" target="_blank">BOOKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html" target="_blank">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        //Header Time
+        document.addEventListener("DOMContentLoaded", function () {
+            function updateCurrentDate() {
+                const currentDateElement = document.getElementById("current-date");
+                const currentDate = new Date();
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = currentDate.toLocaleDateString('en-US', options);
+                currentDateElement.textContent = formattedDate;
+            }
+
+            // Initial update of the current date
+            updateCurrentDate();
+
+            // Update the current date every second
+            setInterval(updateCurrentDate, 1000);
+        });
+    </script>
+
+    <input type="hidden" name="is_logged_in" id="is_logged_in" value="0">
+    <input type="hidden" name="is_indivisual_reader" id="is_indivisual_reader" value="0">
+    <!--</div>-->
+    <!--  </div>-->
+    <!--</div>-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <style>
+        /*Contact us Start*/
+        #join p small img {
+            width: 25px;
+            vertical-align: top;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+
+        #join p small a:hover {
+            color: #000 !important;
+        }
+
+        #join ul li input {
+            width: 100% !important;
+        }
+
+        #join ul li i {
+            color: #fff;
+            padding: 5px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .contact_join_us {
+            background-color: #ff7f26;
+            color: #fff;
+            margin-left: -10%;
+        }
+
+        #drop-join {
+            background-color: #108968 !important;
+        }
+
+        #join1 p,
+        #join p {
+            text-align-last: left;
+            font-size: 16px;
+        }
+
+        #contact-social-link i {
+            color: #fff;
+            padding: 5px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .form-control {
+            width: 49%;
+            margin-bottom: 5px;
+            background-color: transparent;
+        }
+
+        .btn-primary {
+            border-color: transparent;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #108968 !important;
+            border-color: #108968 !important;
+        }
+
+        .btn-primary:not(:disabled):not(.disabled).active:focus,
+        .btn-primary:not(:disabled):not(.disabled):active:focus,
+        .show>.btn-primary.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgb(255, 127, 38);
+        }
+
+        canvas {
+            /*prevent interaction with the canvas*/
+            pointer-events: none;
+        }
+    </style>
+    <section id="join" class="py-5" style="background-image: url('/Images/register_Background.png');">
+        <div class="container">
+
+            <div class="row">
+                <div id="drop-join" class="row py-5 bg-light mt-4 mx-auto col-sm-8">
+                    <div class="col-sm-5 contact_join_us py-5 text-white">
+                        <h2 class="text-white text-left"
+                            style="font-family: 'Calistoga', cursive; text-transform: capitalize; letter-spacing: normal !important;">
+                            Contact Us</h2>
+                        <p class="text-white text-left"> NIT Garden, Trimurti, Nagpur, Maharashtra 441104</p>
+                        <p><small><img class="d-inline" src="/Images/mail1.png"></small><small
+                                class=" text-white">Email: - <a href=""
+                                    class="text-white">dewanshi2019@gmail.com</a></small></p>
+                        <p><small><img class="d-inline" src="/Images/phone1.png"></small><small
+                                class="text-white">Phone: - <a href="" class="text-white">9922336776</a></small></p>
+                        <ul id="contact-social-link" class="m-0 p-0 mb-3">
+                            <li class="d-inline-block justify-content-center align-self-center pr-2 mr-1"><a
+                                    href="https://www.facebook.com" target="_blank" class="text-white"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li class="d-inline-block justify-content-center align-self-center pr-2 mr-1"><a
+                                    href="https://twitter.com" target="_blank" class="text-white"><i
+                                        class="fa fa-twitter"></i></a></li>
+                            <li class="d-inline-block justify-content-center align-self-center pr-2 mr-1"><a
+                                    href="https://www.instagram.com" target="_blank" class="text-white"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li class="d-inline-block justify-content-center align-self-center pr-2 mr-1"><a
+                                    href="https://www.linkedin.com" class="text-white" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                            <li class="d-inline-block justify-content-center align-self-center"><a
+                                    href="https://in.pinterest.com" target="_blank" class="text-white"><i
+                                        class="fa fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8 ml-auto py-5">
+                        <h3 class="text-left text-white"
+                            style="font-family: 'Calistoga', cursive; text-transform: capitalize; letter-spacing: normal !important;">
+                            Get in Touch</h3>
+                        <form class="get_in_touch_form" method="post" id="reused_form"
+                            style="background-color: transparent;">
+                            <label class="text-white">Feel free to drop us a line below! </label>
+                            <span class="d-none name_error" style="color: red;">Required Field</span>
+                            <span class="name_regex" style="color: red;"></span>
+                            <input class="w-100 p-1 my-1 name" type="text" name="name" id="name" placeholder="Name"
+                                required="">
+                            <span class="d-none email_error" style="color: red;">Required Field</span>
+
+                            <input class="w-75 p-1 my-1 email emailVal" type="email" name="email" placeholder="Email.."
+                                id="email" required="">
+                            <button type="button" class="btn btn-primary " id="sendOtp">SEND OTP</button>
+
+                            <small class="text-danger error d-none">Please enter valid email id!</small>
+                            <input class="w-100 p-1 my-1 d-none otp_text" type="text" name="otp_text" id="otp_text"
+                                placeholder="Enter OTP" required="">
+                            <input class="w-75 p-1 my-1 phone" type="text" name="phone" maxlength="10"
+                                placeholder="Contact No.." id="phone">
+                            <button type="button" class="btn btn-primary mobile_otpBtn">SEND OTP</button>
+                            <div id="countdown"></div>
+                            <span id="message" class="message" style="color: red;display:none"><small></small></span>
+                            <input class="w-100 p-1 my-1" type="text" name="phone_otp" maxlength="4"
+                                placeholder="Enter OTP" id="phone_otp" style="display:none;"
+                                onchange="verify_mobile_otp()">
+                            <span class="mobile_otp_mis d-none" style="color:red;display:none;"></span>
+                            <select class="w-100 p-1 my-1 typeCls" id="exampleFormControlSelect1">
+                                <option value="">--Select Type--</option>
+                                <option value="0">Publisher</option>
+                                <option value="1">General</option>
+                                <option value="2">Student</option>
+                                <option value="3">Institute</option>
+                                <option value="4">Teacher</option>
+                                <option value="5">Parent</option>
+                            </select>
+                            <span class="d-none comment_error" style="color: red;">Required Field</span>
+                            <textarea class="w-100 p-1 my-1 comment bg-white" rows="3" placeholder="Message"
+                                id="comment" name="message" required=""></textarea>
+                            <!-- <div id="captcha">
+    </div> -->
+                            <!-- <input type="text" class="w-100 p-1 my-1 phone" placeholder="Captcha" id="cpatchaTextBox"/> -->
+                            <button type="button" class="btn btn-primary contact_us recap" id="btnContactUs"
+                                disabled>Send</button>
+                        </form>
+                        <div id="success_message" style="width:100%; height:20%; display:none; "
+                            class="alert alert-success" role="alert">
+                            <h3>Sent your enquiry successfully!</h3>
+                        </div>
+                        <div id="error_message" style="width:100%; height:auto; display:none; "
+                            class="alert alert-danger" role="alert">
+                            <h3>Error</h3> Sorry there was an error sending your form.
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <div class="blue-section pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="bottombox">
+                        <h6 class="text-dark">Information</h6>
+                        <ul>
+                            <li><a href="#" class="text-white">ICTRD E Library</a></li>
+                            <li><a href="#" class="text-white">Active India Pvt Ltd. </a></li>
+                            <li><a href="#" class="text-white">Trimurti Ngr, Nagpur 441104</a></li>
+                            <li><a href="#" class="text-white">Maharashtra</a></li>
+                            <!--<li><a href="#" class="text-white">10th class book</a></li>-->
+                            <!--<li><a href="#" class="text-white">10th class book</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="bottombox">
+                        <h6 class="text-dark">Link</h6>
+                        <ul>
+                            <li><a href="#" class="text-white">Blog</a></li>
+                            <li><a href="" class="text-white">Contact Us</a></li>
+                            <li><a href="" class="text-white">Privacy Policy</a></li>
+                            <li><a href="" class="text-white">Terms and condition</a></li>
+                            <li><a href="" class="text-white">Delete Account Policy</a></li>
+                            <!--<li><a href="#" class="text-white">10th class book</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="bottombox">
+                        <h6 class="text-dark">Contact with Us</h6>
+                        <iframe
+                            src="https://www.google.com/maps"
+                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <ul class="social-icon">
+                            <li><a href="https://www.facebook.com" class="text-white" target="_blank"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com" class="text-white" target="_blank"><i
+                                        class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://in.pinterest.com" class="text-white" target="_blank"><i
+                                        class="fa fa-pinterest"></i></a></li>
+                            <li><a href="https://www.linkedin.com" class="text-white" target="_blank"><i
+                                        class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com" class="text-white" target="_blank"><i
+                                        class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center">All Rights Reserved Developed & Maintained by <a href="#"
+                            class="orange-color">ICTRD</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://www.ebookselibrary.com/frontend_2/js/jquery.min.js"></script>
+    <script src="https://www.ebookselibrary.com/frontend_2/js/popper.min.js"></script>
+    <script src="https://www.ebookselibrary.com/frontend_2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://www.ebookselibrary.com/frontend_2/js/bootstrap-select.js"></script>
+    <script src="https://www.ebookselibrary.com/frontend_2/js/jquery.atAccordionOrTabs.min.js"></script>
+    <script src="https://www.ebookselibrary.com/frontend_2/js/jquery.bbq.min.js"></script>
+    <script src="https://www.ebookselibrary.com/frontend_2/js/jquery.zoom.js"></script>
+
+
+</body>
+
+</html>
