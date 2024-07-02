@@ -1,52 +1,30 @@
-# ICTRD-E-Library
-I developed this ICTRD E Library  website using HTML5, CSS3, JS,  PHP and Mysql. 
+# ICTRD E-Library
+ICTRD E-Library is a comprehensive digital library system designed to offer an intuitive user experience while providing a robust backend for managing library resources. It includes a variety of features such as user interface design, database management, user authentication and authorization, cataloging, metadata management, search functionality, payment gateway integration, and PDF book download capabilities.
 
-# Timesync Frontend
+# Table of Contents
+Features
+Technologies Used
+Installation
+Usage
+Contributing
+License
 
-![Timesync](https://i.ibb.co/qswXNMb/timesync.png)
+# Features
+1. User Interface Design: A clean and user-friendly interface for seamless navigation and interaction.
+2. Database Design: Robust and scalable database structure to manage library resources efficiently.
+3. Authentication and Authorization: Secure user login and role-based access control.
+Cataloging and Metadata Management: Efficient management of books, authors, categories, and metadata.
+4. Search Functionality: Advanced search capabilities to find books quickly.
+Payment Gateway: Integration with payment gateways for purchasing books.
+5. PDF Book Download: Ability for users to download PDF versions of books.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
-- [System Requirements](#system-requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [Limitations](#limitations)
-- [Future Scope](#future-scope)
-- [Author](#author)
-
-## Introduction
-
-Timesync is an innovative school scheduling application designed to streamline the management of classes, subjects, students, teachers, timetables, attendance, and event scheduling. Built with React, and TypeScript , MUI , NestJS, MongoDB, it provides a seamless experience for administrators, teachers, and students alike.
-
-The frontend of the Timesync project is built using React, TypeScript, and MUI with a minimal theme. It provides a user-friendly interface for managing classes, subjects, students, teachers, timetables, attendance, attendance reports, and event schedules.
-
-## Features
-
-- *User Management:* Register and authenticate users (students, teachers, administrators).
-- *Class Management:* Create, read, update, and delete operations for classes.
-- *Subject Management:* Create, read, update, and delete operations for subjects.
-- *Student Management:* Create, read, update, and delete operations for students.
-- *Teacher Management:* Create, read, update, and delete operations for teachers.
-- *Timetable Management:* Generate and manage timetables.
-- *Attendance Management:* Record and manage attendance.
-- *Attendance Reports:* Generate and fetch attendance reports.
-- *Event Scheduling:* Manage event schedules and calendars.
-
-## Technologies Used
-
-- *React:* A JavaScript library for building user interfaces.
-- *TypeScript:* A typed superset of JavaScript that compiles to plain JavaScript.
-- *MUI (Material-UI):* A popular React UI framework that implements Google's Material Design.
-
-- *Axios:* A promise-based HTTP client for the browser and Node.js.
-- *React Router:* A collection of navigational components that compose declaratively with your application.
-- *FullCalendar:* A JavaScript event calendar.
-- *ApexCharts:* A modern charting library that helps developers create beautiful interactive visualizations for web pages.
+# Technologies Used
+Frontend: HTML, CSS, JavaScript
+Backend: PHP
+Database: MySQL
+Authentication: Session-based authentication
+Payment Gateway: Integration with a payment service razorpay
+Other Tools: Any additional libraries or tools used
 
 ## Screenshots
 
@@ -54,89 +32,50 @@ The frontend of the Timesync project is built using React, TypeScript, and MUI w
   <br/>
   ![Login Page](https://i.ibb.co/Wk2XFVg/Screenshot-74.png)
   <br/>
-- DashBoard
+- Main Page
   <br/>
-  ![DashBoard](https://i.ibb.co/k1DmSPn/Screenshot-2024-05-29-133113.png)
+  ![Main Page](https://i.ibb.co/zF9crGw/Screenshot-67.png)
   <br/>
-- TimeTable
+- Categories
   <br/>
-  ![TimeTable](https://i.ibb.co/7vPDwHB/Screenshot-2024-05-29-133344.png)
+  ![Categories](https://i.ibb.co/3SNTyrq/Screenshot-68.png)
   <br/>
-- Attendance
+- Download Books
   <br/>
-  ![Attendance](https://i.ibb.co/WtBSF7h/Screenshot-2024-05-29-133500.png)
+  ![Download Books](https://i.ibb.co/wgg8w86/Screenshot-71.png)
   <br/>
-- Update Attendance
+  - Admin Login Page
   <br/>
-  ![Update Attendance](https://i.ibb.co/2nKs65v/Screenshot-2024-06-01-120530.png)
+  ![Admin Login Page](https://i.ibb.co/5FnxrJc/Screenshot-76.png)
   <br/>
-- Attendance Report
+- Admin Panel
   <br/>
-  ![Attendance Report](https://i.ibb.co/KVMrh7W/Screenshot-2024-06-01-120607.png)
+  ![Admin Panel](https://i.ibb.co/YLFqQzb/Screenshot-78.png)
   <br/>
-- Calender (Event Scheduler)
+- Add Book Page
   <br/>
-  ![Calender](https://i.ibb.co/rfMT0Jp/Screenshot-2024-05-29-133333.png)
+  ![Add Book Page](https://i.ibb.co/JQfS92x/Screenshot-79.png)
   <br/>
 
-## System Requirements
 
-- *Node.js:* v14.x or later
-- *npm:* v6.x or later
+# Usage
+User Registration and Login:
+Users can register and log in to access the library's features.
 
-## Installation
+Catalog Management:
+Admins can manage the catalog by adding, editing, or deleting books and their metadata.
 
-1. *Clone the Repository:*
+Search Functionality:
+Users can search for books using keywords, author names, categories, etc.
 
-   bash
-   git clone https://github.com/himanshuk09/TimeSync-fe.git
-   cd timesync-frontend
+Payment and Download:
+Users can purchase books and download them in PDF format.
 
-   
-
-2. *Install Dependencies:*
-   bash
-   npm install
-   
-
-## Configuration
-
-- Create a .env file in the root directory and add your necessary environment variables.
-  bash
-   REACT_APP_API_URL=http://localhost:3000/api
-  
-
-## Running the Application
-
-1. *Start MongoDB:*
-   Ensure MongoDB is running on your local machine or a remote server.
-
-2. *Start the Application:*
-
-   bash
-   npm run start
-
-   
-
-## Limitations
-
-- Limited offline capabilities.
-- Basic user interface in initial implementation.
-- Scalability issues with very large datasets.
-- Real-time data updates not fully supported.
-
-## Future Scope
-
-- Enhance scalability and performance.
-- Implement real-time data synchronization and notifications.
-- Develop offline capabilities and native mobile apps.
-- Improve UI/UX design for a better user experience.
-- Offer extensive customization options for different schools.
-- Integrate with third-party educational tools and platforms.
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
 ## Author
 
-- Name: Himanshu Khade
-- Email: 20013himanshu@gmail.com
-- Portfolio : https://himanshu-khade-portfolio.vercel.app/
-- LinkedIn: https://www.linkedin.com/in/himanshu-khade-3a64a2197/
+- Name: Dewanshi Dhote
+- Email: dewanshi2019@gmail.com
+- LinkedIn: https://www.linkedin.com/in/dewanshi-dhote-1622b31b6/
